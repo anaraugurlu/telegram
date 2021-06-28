@@ -1,0 +1,198 @@
+﻿<Window x:Class="wpf_lesson_2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:wpf_lesson_2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <!--<WrapPanel >
+
+        <Button Width=" 50" Height=" 50">
+            
+        </Button>
+        <Button Width=" 50" Height=" 50">
+
+        </Button>
+        <Button Width=" 50" Height=" 50">
+
+        </Button>
+        <Button Width=" 50" Height=" 50">
+
+        </Button>
+        <Button Width=" 50" Height=" 50">
+
+        </Button>
+        <Button Width=" 50" Height=" 50">
+
+        </Button>
+        <Button Width=" 50" Height=" 50">
+
+        </Button>
+        <Button Width=" 50" Height=" 50">
+
+        </Button>
+        <Button Width=" 50" Height=" 50">
+
+        </Button>
+        <Button Width=" 50" Height=" 50">
+
+        </Button>
+        <Button Width=" 50" Height=" 50">
+
+        </Button>
+        <Button Width=" 50" Height=" 50">
+
+        </Button>
+        <Button Width=" 50" Height=" 50">
+
+        </Button>
+        <Button Width=" 50" Height=" 50">
+
+        </Button>
+        <Button Width=" 50" Height=" 50">
+
+        </Button>
+        <Button Width=" 50" Height=" 50">
+
+        </Button>
+        <Button Width=" 50" Height=" 50">
+
+        </Button>
+        <Button Width=" 50" Height=" 50">
+
+        </Button>
+        <Button Width=" 50" Height=" 50">
+
+        </Button>
+        <Button Width=" 50" Height=" 50">
+
+        </Button>
+    </WrapPanel>-->
+
+    <!--<DockPanel >
+
+        <WrapPanel  DockPanel.Dock="Top" >
+        <Button Margin=" 5" Padding=" 20" FontSize=" 15" Background="Cyan" FontWeight="Bold"  Content=" home"></Button>
+        <Button Margin=" 5" Padding=" 20" FontSize=" 15" Background="Cyan" FontWeight="Bold"  Content=" home"></Button>
+        <Button Margin=" 5" Padding=" 20" FontSize=" 15" Background="Cyan" FontWeight="Bold"  Content=" home"></Button>
+        <Button Margin=" 5" Padding=" 20" FontSize=" 15" Background="Cyan" FontWeight="Bold"  Content=" home"></Button>
+            </WrapPanel>
+        <Button 
+            Padding=" 20" FontSize=" 30" Content=" right" DockPanel.Dock="Right" ></Button>
+        <Button 
+      
+        Padding=" 20" FontSize=" 30" Content=" Left" DockPanel.Dock="Left"  >
+        </Button>
+        <Button 
+            Padding=" 20" FontSize=" 30" Content=" bottom" DockPanel.Dock="Bottom"  ></Button>
+        <Button 
+            Padding=" 20" FontSize=" 30" Content=" main Page" DockPanel.Dock="Bottom"  ></Button>
+    </DockPanel>-->
+    <!--<Grid >
+        <Grid.RowDefinitions  >
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        
+        <Grid.ColumnDefinitions >
+            <ColumnDefinition  />
+            <ColumnDefinition  />
+        </Grid.ColumnDefinitions>
+        <Button Grid.Row ="0"  Background="DarkCyan"  ></Button>
+        <Button Grid.Row ="1"  Background="Aquamarine"    ></Button>
+    </Grid>-->
+    <Grid >
+        <!--<Grid.RowDefinitions >
+
+            <RowDefinition Height=" 7*"/>
+            <RowDefinition Height=" *"/>
+
+        </Grid.RowDefinitions>
+        <Grid Grid.Row=" 1" Background="Aqua" >
+            <TextBox Grid.Column=" 0" FontSize=" 35"></TextBox>
+        <Button Grid.Column=" 1" Content=" save" FontSize=" 30"></Button>
+
+
+            <Grid.ColumnDefinitions >
+                <ColumnDefinition Width=" 3*"/>
+                <ColumnDefinition Width=" *"/>
+            </Grid.ColumnDefinitions>
+        </Grid>
+        <Grid Grid.Row=" 0" Background="CadetBlue"  >
+        </Grid>-->
+
+        <Grid.RowDefinitions >
+
+            <RowDefinition Height=" *"/>
+            <RowDefinition Height=" 7*"/>
+
+        </Grid.RowDefinitions>
+        <Grid Grid.Row=" 0" Background="DodgerBlue" >
+            
+        </Grid>
+      
+        <Grid Grid.Row=" 1" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width=" *"/>
+                <ColumnDefinition Width=" 3*"/>
+
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column=" 0">
+                <Grid.RowDefinitions >
+
+                    <RowDefinition Height =" 1*"/>
+                    <RowDefinition Height =" 2*"/>
+                    <RowDefinition Height =" 2*"/>
+                    <RowDefinition Height =" 2*"/>
+                    <RowDefinition Height =" 2*"/>
+                    <RowDefinition Height =" 2*"/>
+
+                </Grid.RowDefinitions>
+                <Grid Grid.Row=" 0" Background="LightBlue" >
+                    <!--<Border CornerRadius="50 ">-->
+                    <TextBox Margin=" 6" Text  =" search">
+                        
+                    </TextBox>
+                        
+                    <!--</Border>-->
+                </Grid>
+            </Grid>
+            <Grid Grid.Column="1 " >
+                <Grid.RowDefinitions >
+                    <RowDefinition Height =" 4*"/>
+                    <RowDefinition Height =" *"/>
+
+                </Grid.RowDefinitions>
+                <Grid Grid.Row=" 0" Background="LightSkyBlue">
+                    <Image  > 
+                        
+                        
+                    </Image>
+                    
+
+
+                </Grid>
+                
+                <Grid Grid.Row=" 1" >
+                    <Grid.ColumnDefinitions >
+                        <ColumnDefinition Width=" 4*"/>
+                        <ColumnDefinition Width=" *"/>
+                      
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Column=" 1">
+
+                        <Button  Margin=" 8" Content=" Send">
+                            
+                        </Button>
+                    </Grid>
+                    <Grid Grid.Column=" 0">
+                        <TextBox Margin=" 8"></TextBox>
+                        
+                    </Grid>
+                </Grid>
+            </Grid>
+
+        </Grid>
+    </Grid>
+</Window>
